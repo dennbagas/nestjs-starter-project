@@ -1,0 +1,7 @@
+coverage
+dist
+.env
+.eslintrc.js
+.gitignore
+.prettierrc
+README.md
