@@ -23,6 +23,8 @@ $ npm run start:prod
 ```
 
 ## Create migration file
+Create ormconfig.json first in the root folder to set up your database. For reference read the [ormconfig.json](https://typeorm.io/#/using-ormconfig/using-ormconfigjson) configuration.
+
 ```bash
 $ npm run migration:generate "AddSomeTable"
 ```
