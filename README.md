@@ -49,7 +49,7 @@ $ docker-compose up --build
 ```
 
 ## Auto migration
-Auto migration is different from [Typeorm `syncrhonize` method](https://github.com/typeorm/typeorm/blob/master/docs/faq.md#how-do-i-update-a-database-schema). This is like a normal migration but it runs when the docker container start. The migration will run typeorm CLI and supplies with configuration from `ormconfig.js`. The value of `ormconfig.js` is configured when the container start with supplied environment (`host`, `user`, `password`, `port`, `etc`), so the original value is safe to commit to version control as its can change dinamically. The changes of `ormconfig.js` when container starts is done by `entrypoint.sh` scripts
+Auto migration using typeorm migrationsRun at startup
 
 ## Environment Configuration
 Environment configuration done by loading all declared environtment in `config` module. If you want to add more configuration, add it to `config.service.ts` in `config` module

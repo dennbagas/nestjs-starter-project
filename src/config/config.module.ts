@@ -11,4 +11,4 @@ import { EnvService } from './config.service';
   ],
   exports: [EnvService],
 })
-export class EnvModule {}
+export class ConfigurationModule {}

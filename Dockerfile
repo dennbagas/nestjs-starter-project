@@ -20,4 +20,4 @@ RUN npm install pm2 -g \
 EXPOSE 3000
 
 # run script.sh
-CMD ["sh", "entrypoint.sh"]
+CMD ["pm2-runtime", "ecosystem.config.js"]
